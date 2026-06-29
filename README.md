@@ -199,4 +199,3 @@ dotnet run
 - Система контроля версий (GitHub: ветки, pull requests, code review)
 - Unit-тестирование (xUnit)
 - Документирование кода и API (Swagger / OpenAPI)
-
