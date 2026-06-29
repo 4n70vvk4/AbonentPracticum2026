@@ -1,0 +1,39 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Api", "src\backend\WebApp.Api\WebApp.Api.csproj", "{71673AC3-2B0E-464F-896F-67787EE9832C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0A7F864B-E153-4A4A-82E1-BD9DDFB98DDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{58A4C001-84EA-4431-82D9-C74A8E5C1C02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{541EA649-E18B-4316-BF31-A53EBD11848D}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "frontend", "src\frontend\frontend.esproj", "{321C3D44-764B-4E3E-A5CD-30B60D9D6A65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{67554A87-F2EF-47BF-8102-8EF8504F4A9E}"
+	ProjectSection(SolutionItems) = preProject
+		docs\assignment.md = docs\assignment.md
+		docs\internship-plan.md = docs\internship-plan.md
+		docs\utilities-list.md = docs\utilities-list.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{982ECEEC-76B0-4408-8EFA-0E2AC30D03F2}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4ED46E79-1AFE-43A2-AA7E-BC6512D5EEEF}"
+EndProject
+Global
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58A4C001-84EA-4431-82D9-C74A8E5C1C02} = {0A7F864B-E153-4A4A-82E1-BD9DDFB98DDF}
+		{71673AC3-2B0E-464F-896F-67787EE9832C} = {58A4C001-84EA-4431-82D9-C74A8E5C1C02}
+		{541EA649-E18B-4316-BF31-A53EBD11848D} = {0A7F864B-E153-4A4A-82E1-BD9DDFB98DDF}
+		{321C3D44-764B-4E3E-A5CD-30B60D9D6A65} = {541EA649-E18B-4316-BF31-A53EBD11848D}
+	EndGlobalSection
+EndGlobal

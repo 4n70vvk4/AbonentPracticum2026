@@ -8,6 +8,8 @@ src/backend/**/obj/
 .vscode/
 
 # Frontend
+src/frontend/**/bin/
+src/frontend/**/obj/
 node_modules/
 dist/
 
