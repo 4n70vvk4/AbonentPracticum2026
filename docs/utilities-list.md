@@ -352,7 +352,7 @@ eyJzdWIiOiIxMjM0NSIsIm5hbWUiOiLQmNCy0LDQvSIsImV4cCI6MTc4NTk2MzYwMH0.
     "alg": "HS256",       "sub": "12345",
     "typ": "JWT"          "name": "Иван",
   }                       "exp": 1785963600
-                          (28.06.2026 21:00:00)
+                          (05.08.2026 21:00:00)
                         }
   ⚠️ Токен НЕ истёк. Осталось: 0 дней.
 ```
@@ -381,7 +381,7 @@ eyJzdWIiOiIxMjM0NSIsIm5hbWUiOiLQmNCy0LDQvSIsImV4cCI6MTc4NTk2MzYwMH0.
 **Пример**:
 ```
 Вход:               Выход:
-to-date             28.06.2026 21:00:00 (UTC)
+to-date             05.08.2026 21:00:00 (UTC)
 1785963600
 ```
 
