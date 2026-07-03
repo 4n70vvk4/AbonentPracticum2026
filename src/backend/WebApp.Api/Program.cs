@@ -27,7 +27,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Чтобы добавить свою — скопируйте строку ниже и замените SumNumbersService на свой класс:
 builder.Services.AddSingleton<UtilityOrchestrator>();
 builder.Services.AddSingleton<IUtilityService, SumNumbersService>();
-// builder.Services.AddSingleton<IUtilityService, MyNewService>();  // ← пример для новой утилиты
+builder.Services.AddSingleton<IUtilityService, TextToListService>();  // утилита TextToListService
+builder.Services.AddSingleton<IUtilityService, PasswordGenService>(); // утилита PasswordGenService
 
 // --- Swagger ---
 builder.Services.AddEndpointsApiExplorer();
