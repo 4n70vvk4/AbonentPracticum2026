@@ -232,8 +232,11 @@ public class CsvToSqlService : IUtilityService
     /// <summary>
     /// Экранирует идентификатор (имя таблицы/колонки) для SQL.
     /// </summary>
-    private static string EscapeSqlName(string name)
+    private static string EscapeSqlName(string? name)
     {
+        if (name is null)
+            return "NULL";
+
         // Для простоты используем двойные кавычки (SQL standard)
         return $"\"{name.Replace("\"", "\"\"")}\"";
     }
