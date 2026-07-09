@@ -39,7 +39,7 @@ public class AppDbContext : DbContext
                 Endpoint = "multi-replace",
                 Category = "Текст",
                 Difficulty = 2,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {
@@ -49,7 +49,7 @@ public class AppDbContext : DbContext
                 Endpoint = "csv-to-sql",
                 Category = "Данные",
                 Difficulty = 2,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {
@@ -79,7 +79,7 @@ public class AppDbContext : DbContext
                 Endpoint = "text-stats",
                 Category = "Текст",
                 Difficulty = 1,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {
@@ -99,7 +99,7 @@ public class AppDbContext : DbContext
                 Endpoint = "base64",
                 Category = "Кодирование",
                 Difficulty = 1,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {
@@ -119,7 +119,7 @@ public class AppDbContext : DbContext
                 Endpoint = "hash-calc",
                 Category = "Безопасность",
                 Difficulty = 1,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {
@@ -129,7 +129,7 @@ public class AppDbContext : DbContext
                 Endpoint = "uuid-gen",
                 Category = "Код",
                 Difficulty = 1,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {
@@ -139,7 +139,7 @@ public class AppDbContext : DbContext
                 Endpoint = "string-sort",
                 Category = "Текст",
                 Difficulty = 1,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {
@@ -179,7 +179,7 @@ public class AppDbContext : DbContext
                 Endpoint = "lorem-ipsum",
                 Category = "Текст",
                 Difficulty = 1,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {
@@ -219,7 +219,7 @@ public class AppDbContext : DbContext
                 Endpoint = "unix-time",
                 Category = "Дата и время",
                 Difficulty = 1,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {
@@ -239,7 +239,7 @@ public class AppDbContext : DbContext
                 Endpoint = "char-inspector",
                 Category = "Текст",
                 Difficulty = 1,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {
@@ -289,7 +289,7 @@ public class AppDbContext : DbContext
                 Endpoint = "percent-calc",
                 Category = "Числа",
                 Difficulty = 1,
-                IsImplemented = false
+                IsImplemented = true
             }
         );
     }

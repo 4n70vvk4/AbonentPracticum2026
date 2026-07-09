@@ -324,6 +324,34 @@ body {
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
+/* ===== Language buttons (text-to-list) ===== */
+.lang-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}
+.lang-btn {
+    padding: 8px 20px;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.15s;
+    color: var(--color-text-secondary);
+}
+.lang-btn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+.lang-btn.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
 .not-implemented {
     background: #fef3c7;
     border: 1px solid #fcd34d;

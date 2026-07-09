@@ -29,6 +29,17 @@ builder.Services.AddSingleton<UtilityOrchestrator>();
 builder.Services.AddSingleton<IUtilityService, SumNumbersService>();
 builder.Services.AddSingleton<IUtilityService, TextToListService>();  // утилита TextToListService
 builder.Services.AddSingleton<IUtilityService, PasswordGenService>(); // утилита PasswordGenService
+builder.Services.AddSingleton<IUtilityService, TextStatsService>();  // утилита TextStatsService
+builder.Services.AddSingleton<IUtilityService, Base64Service>();    // утилита Base64Service
+builder.Services.AddSingleton<IUtilityService, HashCalcService>();  // утилита HashCalcService
+builder.Services.AddSingleton<IUtilityService, UuidGenService>();   // утилита UuidGenService
+builder.Services.AddSingleton<IUtilityService, StringSortService>(); // утилита StringSortService
+builder.Services.AddSingleton<IUtilityService, LoremIpsumService>(); // утилита LoremIpsumService
+builder.Services.AddSingleton<IUtilityService, UnixTimeService>();  // утилита UnixTimeService
+builder.Services.AddSingleton<IUtilityService, CharInspectorService>(); // утилита CharInspectorService
+builder.Services.AddSingleton<IUtilityService, PercentCalcService>();   // утилита PercentCalcService
+builder.Services.AddSingleton<IUtilityService, MultiReplaceService>(); // утилита MultiReplaceService
+builder.Services.AddSingleton<IUtilityService, CsvToSqlService>();    // утилита CsvToSqlService
 
 // --- Swagger ---
 builder.Services.AddEndpointsApiExplorer();
