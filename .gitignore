@@ -1,7 +1,10 @@
 # .gitignore для студенческого проекта
-# Backend
-src/backend/**/bin/
-src/backend/**/obj/
+# OpenCode
+.omo/
+
+# Backend — bin/obj в любом месте проекта
+**/bin/
+**/obj/
 *.user
 *.suo
 *.vs/
