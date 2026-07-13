@@ -3,6 +3,11 @@ using System.Text;
 
 namespace WebApp.Api.Services;
 
+/// <summary>
+/// Хеш-калькулятор ★☆☆
+/// Вычисляет хеш-сумму строки по алгоритму MD5, SHA1, SHA256 или SHA512.
+/// Endpoint: hash-calc
+/// </summary>
 public class HashCalcService : IUtilityService
 {
     public string Endpoint => "hash-calc";

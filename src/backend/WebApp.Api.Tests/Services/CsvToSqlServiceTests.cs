@@ -3,6 +3,7 @@ using Xunit;
 
 namespace WebApp.Api.Tests.Services;
 
+/// <summary>Тесты для CSV → SQL INSERT (csv-to-sql)</summary>
 public class CsvToSqlServiceTests
 {
     private readonly CsvToSqlService _service = new();

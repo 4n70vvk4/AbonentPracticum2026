@@ -4,6 +4,11 @@ using System.Text.RegularExpressions;
 
 namespace WebApp.Api.Services;
 
+/// <summary>
+/// Инспектор символов (ASCII / Unicode) ★☆☆
+/// Показывает ASCII-код или Unicode codepoint каждого символа и собирает строку из кодов обратно.
+/// Endpoint: char-inspector
+/// </summary>
 public class CharInspectorService : IUtilityService
 {
     public string Endpoint => "char-inspector";

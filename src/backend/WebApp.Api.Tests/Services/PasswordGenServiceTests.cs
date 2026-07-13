@@ -3,6 +3,7 @@ using Xunit;
 
 namespace WebApp.Api.Tests.Services;
 
+/// <summary>Тесты для Генератор паролей (password-gen)</summary>
 public class PasswordGenServiceTests
 {
     private readonly PasswordGenService _service = new();

@@ -3,6 +3,7 @@ using Xunit;
 
 namespace WebApp.Api.Tests.Services;
 
+/// <summary>Тесты для Калькулятор пропорций и процентов (percent-calc)</summary>
 public class PercentCalcServiceTests
 {
     private readonly PercentCalcService _service = new();

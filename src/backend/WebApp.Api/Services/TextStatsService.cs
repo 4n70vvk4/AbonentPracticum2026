@@ -2,6 +2,11 @@ using System.Text.RegularExpressions;
 
 namespace WebApp.Api.Services;
 
+/// <summary>
+/// Подсчёт символов и слов ★☆☆
+/// Подсчитывает количество символов, слов, строк и предложений в тексте.
+/// Endpoint: text-stats
+/// </summary>
 public class TextStatsService : IUtilityService
 {
     public string Endpoint => "text-stats";

@@ -3,12 +3,9 @@ using System.Globalization;
 namespace WebApp.Api.Services;
 
 /// <summary>
-/// ПРИМЕР для студентов: сумма чисел, переданных по одному на строку.
-/// 
-/// Как создать свою утилиту:
-/// 1. Скопируйте этот файл, переименуйте класс
-/// 2. Реализуйте IUtilityService (Endpoint + Execute)
-/// 3. Зарегистрируйте в Program.cs: builder.Services.AddSingleton&lt;IUtilityService, ВашКласс&gt;()
+/// Сумма чисел ★☆☆
+/// Суммирует числа, переданные по одному на строку. Поддерживает целые и дробные числа.
+/// Endpoint: sum-numbers
 /// </summary>
 public class SumNumbersService : IUtilityService
 {

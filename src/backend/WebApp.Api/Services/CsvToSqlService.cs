@@ -5,15 +5,9 @@ using System.Text.RegularExpressions;
 namespace WebApp.Api.Services;
 
 /// <summary>
-/// Утилита "CSV → SQL INSERT" ★★☆
-/// Преобразует CSV-данные в SQL-скрипт: CREATE TEMP TABLE + INSERT.
-///
-/// Формат входа:
-///   Строка 1: имя таблицы
-///   Строка 2: заголовки колонок (через запятую)
-///   Строки 3+: данные (по одной записи на строку)
-///
-/// Типы колонок определяются автоматически: INT / DOUBLE PRECISION / TEXT.
+/// Преобразователь CSV → SQL INSERT ★★☆
+/// Преобразует CSV-данные в SQL-скрипт: CREATE TEMP TABLE + INSERT с автоопределением типов колонок.
+/// Endpoint: csv-to-sql
 /// </summary>
 public class CsvToSqlService : IUtilityService
 {
@@ -29,19 +23,16 @@ public class CsvToSqlService : IUtilityService
                          .Select(l => l.TrimEnd('\r'))
                          .ToList();
 
-        // Убираем пустые строки в конце (пользователь мог случайно нажать Enter)
         while (lines.Count > 0 && string.IsNullOrWhiteSpace(lines[^1]))
             lines.RemoveAt(lines.Count - 1);
 
         if (lines.Count < 2)
             return "Ошибка: нужно минимум 2 строки (имя таблицы и заголовки колонок).";
 
-        // --- Парсинг ---
         var tableName = lines[0].Trim();
         if (string.IsNullOrWhiteSpace(tableName))
             return "Ошибка: имя таблицы не может быть пустым.";
 
-        // Валидация имени таблицы: только буквы, цифры, подчёркивания
         if (!Regex.IsMatch(tableName, @"^[a-zA-Z_][a-zA-Z0-9_]*$"))
             return "Ошибка: имя таблицы должно начинаться с буквы или подчёркивания и содержать только буквы, цифры и подчёркивания.";
 
@@ -51,17 +42,11 @@ public class CsvToSqlService : IUtilityService
 
         var dataLines = lines.Skip(2).ToList();
 
-        // --- Определение типов колонок ---
-
-        // Для каждой колонки смотрим на значения ВО ВСЕХ строках
-        // и выбираем самый общий тип, в который помещаются все непустые значения
         var columnTypes = new string[headers.Count];
         for (int col = 0; col < headers.Count; col++)
         {
             columnTypes[col] = InferColumnType(dataLines, col);
         }
-
-        // --- Генерация SQL ---
 
         var sb = new StringBuilder();
 

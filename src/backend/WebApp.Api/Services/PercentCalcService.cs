@@ -4,6 +4,11 @@ using System.Text.Json.Serialization;
 
 namespace WebApp.Api.Services;
 
+/// <summary>
+/// Калькулятор пропорций и процентов ★☆☆
+/// Вычисляет процент от числа, изменение в процентах и пропорциональное соотношение.
+/// Endpoint: percent-calc
+/// </summary>
 public class PercentCalcService : IUtilityService
 {
     public string Endpoint => "percent-calc";

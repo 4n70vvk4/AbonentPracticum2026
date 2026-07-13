@@ -1,5 +1,10 @@
 namespace WebApp.Api.Services;
 
+/// <summary>
+/// Сортировщик строк ★☆☆
+/// Сортирует строки по алфавиту, по длине или удаляет дубликаты.
+/// Endpoint: string-sort
+/// </summary>
 public class StringSortService : IUtilityService
 {
     public string Endpoint => "string-sort";

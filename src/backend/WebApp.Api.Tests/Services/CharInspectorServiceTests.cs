@@ -3,6 +3,7 @@ using Xunit;
 
 namespace WebApp.Api.Tests.Services;
 
+/// <summary>Тесты для Инспектор символов (char-inspector)</summary>
 public class CharInspectorServiceTests
 {
     private readonly CharInspectorService _service = new();

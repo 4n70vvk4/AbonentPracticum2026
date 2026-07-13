@@ -2,6 +2,11 @@ using System.Text;
 
 namespace WebApp.Api.Services;
 
+/// <summary>
+/// Base64 кодер / декодер ★☆☆
+/// Кодирует или декодирует строку в формат Base64.
+/// Endpoint: base64
+/// </summary>
 public class Base64Service : IUtilityService
 {
     public string Endpoint => "base64";

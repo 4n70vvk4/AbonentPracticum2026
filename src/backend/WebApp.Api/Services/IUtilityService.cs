@@ -1,13 +1,8 @@
 namespace WebApp.Api.Services;
 
 /// <summary>
-/// ИНТЕРФЕЙС, который должна реализовать КАЖДАЯ новая утилита.
-/// 
-/// Что нужно сделать студенту:
-/// 1. Создать класс, реализующий этот интерфейс (см. SumNumbersService как пример)
-/// 2. Endpoint — уникальный строковый ключ (например "my-tool")
-/// 3. Execute(string input) — принимает входную строку, возвращает результат
-/// 4. Зарегистрировать в Program.cs: builder.Services.AddSingleton&lt;IUtilityService, МойКласс&gt;()
+/// Интерфейс утилиты.
+/// Каждая утилита реализует Endpoint (уникальный ключ) и Execute (бизнес-логика).
 /// </summary>
 public interface IUtilityService
 {

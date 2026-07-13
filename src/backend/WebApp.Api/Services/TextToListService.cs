@@ -3,7 +3,9 @@ using System.Text;
 namespace WebApp.Api.Services;
 
 /// <summary>
-/// Утилита "Текст в список C# / JavaScript / Python / SQL"
+/// Текст в список C# / JavaScript / Python / SQL ★☆☆
+/// Преобразует строки в переменную-список на выбранном языке программирования.
+/// Endpoint: text-to-list
 /// </summary>
 public class TextToListService : IUtilityService
 {

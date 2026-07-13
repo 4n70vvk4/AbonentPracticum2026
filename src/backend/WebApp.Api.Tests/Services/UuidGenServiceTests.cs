@@ -3,6 +3,7 @@ using Xunit;
 
 namespace WebApp.Api.Tests.Services;
 
+/// <summary>Тесты для Генератор UUID / GUID (uuid-gen)</summary>
 public class UuidGenServiceTests
 {
     private readonly UuidGenService _service = new();

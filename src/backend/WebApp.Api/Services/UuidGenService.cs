@@ -1,5 +1,10 @@
 namespace WebApp.Api.Services;
 
+/// <summary>
+/// Генератор UUID / GUID ★☆☆
+/// Генерирует заданное количество UUID.
+/// Endpoint: uuid-gen
+/// </summary>
 public class UuidGenService : IUtilityService
 {
     public string Endpoint => "uuid-gen";

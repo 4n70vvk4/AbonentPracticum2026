@@ -3,6 +3,7 @@ using Xunit;
 
 namespace WebApp.Api.Tests.Services;
 
+/// <summary>Тесты для Генератор Lorem Ipsum (lorem-ipsum)</summary>
 public class LoremIpsumServiceTests
 {
     private readonly LoremIpsumService _service = new();

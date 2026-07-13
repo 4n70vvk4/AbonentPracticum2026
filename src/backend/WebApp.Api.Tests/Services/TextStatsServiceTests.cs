@@ -3,6 +3,7 @@ using Xunit;
 
 namespace WebApp.Api.Tests.Services;
 
+/// <summary>Тесты для Подсчёт символов и слов (text-stats)</summary>
 public class TextStatsServiceTests
 {
     private readonly TextStatsService _service = new();

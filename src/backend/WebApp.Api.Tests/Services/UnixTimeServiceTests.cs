@@ -3,6 +3,7 @@ using Xunit;
 
 namespace WebApp.Api.Tests.Services;
 
+/// <summary>Тесты для Unix Timestamp конвертер (unix-time)</summary>
 public class UnixTimeServiceTests
 {
     private readonly UnixTimeService _service = new();

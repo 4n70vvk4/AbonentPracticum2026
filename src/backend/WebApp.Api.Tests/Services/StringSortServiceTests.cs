@@ -3,6 +3,7 @@ using Xunit;
 
 namespace WebApp.Api.Tests.Services;
 
+/// <summary>Тесты для Сортировщик строк (string-sort)</summary>
 public class StringSortServiceTests
 {
     private readonly StringSortService _service = new();

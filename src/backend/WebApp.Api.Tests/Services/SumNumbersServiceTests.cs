@@ -1,15 +1,6 @@
 namespace WebApp.Api.Tests.Services;
 
-/// <summary>
-/// ПРИМЕР модульных тестов для утилиты «Сумма чисел».
-/// 
-/// Как студенту добавить тесты для своей утилиты:
-/// 1. Создать файл Services/MyUtilityServiceTests.cs
-/// 2. Скопировать структуру этого файла
-/// 3. Заменить SumNumbersService на свой класс
-/// 4. Написать тесты на все основные и граничные случаи
-/// 5. Запустить: dotnet test
-/// </summary>
+/// <summary>Тесты для Сумма чисел (sum-numbers)</summary>
 public class SumNumbersServiceTests
 {
     private readonly SumNumbersService _service = new();

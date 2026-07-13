@@ -1,8 +1,6 @@
 namespace WebApp.Api.Tests.Services;
 
-/// <summary>
-/// Тесты для утилиты «Текст в список C# / JavaScript / Python / SQL»
-/// </summary>
+/// <summary>Тесты для Текст в список (text-to-list)</summary>
 public class TextToListServiceTests
 {
     private readonly TextToListService _service = new();

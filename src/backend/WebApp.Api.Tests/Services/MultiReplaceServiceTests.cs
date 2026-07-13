@@ -3,6 +3,7 @@ using Xunit;
 
 namespace WebApp.Api.Tests.Services;
 
+/// <summary>Тесты для Множественная замена в тексте (multi-replace)</summary>
 public class MultiReplaceServiceTests
 {
     private readonly MultiReplaceService _service = new();

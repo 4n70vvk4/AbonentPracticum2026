@@ -3,6 +3,7 @@ using Xunit;
 
 namespace WebApp.Api.Tests.Services;
 
+/// <summary>Тесты для Base64 кодер / декодер (base64)</summary>
 public class Base64ServiceTests
 {
     private readonly Base64Service _service = new();

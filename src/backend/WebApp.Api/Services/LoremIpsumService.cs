@@ -3,6 +3,11 @@ using System.Text.Json.Serialization;
 
 namespace WebApp.Api.Services;
 
+/// <summary>
+/// Генератор Lorem Ipsum ★☆☆
+/// Генерирует заданное количество абзацев, слов или символов текста-рыбы.
+/// Endpoint: lorem-ipsum
+/// </summary>
 public class LoremIpsumService : IUtilityService
 {
     public string Endpoint => "lorem-ipsum";

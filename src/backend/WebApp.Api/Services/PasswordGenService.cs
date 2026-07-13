@@ -4,6 +4,11 @@ using System.Text.Json.Serialization;
 
 namespace WebApp.Api.Services;
 
+/// <summary>
+/// Генератор паролей ★☆☆
+/// Генерирует надёжный пароль заданной длины с выбором наборов символов.
+/// Endpoint: password-gen
+/// </summary>
 public class PasswordGenService : IUtilityService
 {
     public string Endpoint => "password-gen";

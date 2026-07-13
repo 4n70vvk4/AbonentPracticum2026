@@ -2,6 +2,11 @@ using System.Globalization;
 
 namespace WebApp.Api.Services;
 
+/// <summary>
+/// Unix Timestamp конвертер ★☆☆
+/// Конвертирует Unix timestamp в читаемую дату и обратно.
+/// Endpoint: unix-time
+/// </summary>
 public class UnixTimeService : IUtilityService
 {
     public string Endpoint => "unix-time";

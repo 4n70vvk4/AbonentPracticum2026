@@ -3,6 +3,7 @@ using Xunit;
 
 namespace WebApp.Api.Tests.Services;
 
+/// <summary>Тесты для Хеш-калькулятор (hash-calc)</summary>
 public class HashCalcServiceTests
 {
     private readonly HashCalcService _service = new();
