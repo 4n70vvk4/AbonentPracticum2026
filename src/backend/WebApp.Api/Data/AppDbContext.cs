@@ -89,7 +89,7 @@ public class AppDbContext : DbContext
                 Endpoint = "case-converter",
                 Category = "Текст",
                 Difficulty = 2,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {
@@ -109,7 +109,7 @@ public class AppDbContext : DbContext
                 Endpoint = "json-formatter",
                 Category = "Данные",
                 Difficulty = 2,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {
@@ -189,7 +189,7 @@ public class AppDbContext : DbContext
                 Endpoint = "yaml-json",
                 Category = "Данные",
                 Difficulty = 3,
-                IsImplemented = false
+                IsImplemented = true
             },
             new Utility
             {

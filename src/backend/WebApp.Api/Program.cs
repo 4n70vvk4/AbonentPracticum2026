@@ -40,6 +40,9 @@ builder.Services.AddSingleton<IUtilityService, CharInspectorService>(); // ут�
 builder.Services.AddSingleton<IUtilityService, PercentCalcService>();   // утилита PercentCalcService
 builder.Services.AddSingleton<IUtilityService, MultiReplaceService>(); // утилита MultiReplaceService
 builder.Services.AddSingleton<IUtilityService, CsvToSqlService>();    // утилита CsvToSqlService
+builder.Services.AddSingleton<IUtilityService, CaseConverterService>(); // утилита CaseConverterService
+builder.Services.AddSingleton<IUtilityService, JsonFormatterService>(); // утилита JsonFormatterService
+builder.Services.AddSingleton<IUtilityService, YamlJsonService>();      // утилита YamlJsonService
 
 // --- Swagger ---
 builder.Services.AddEndpointsApiExplorer();
